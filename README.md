@@ -1,4 +1,4 @@
-#DSLR-Crop-Calc
+# DSLR-Crop-Calc
 
 A simple HTML/Bootstrap/JavaScript DSLR-Crop-Calc.
 
