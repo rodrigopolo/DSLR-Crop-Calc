@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Twitter date picker">
+		<meta name="author" content="Rodrigo Polo">
+		<link rel="icon" href="../../../../favicon.ico">
+
+		<title>Crop Calc</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+
+
+		<main role="main" class="container">
+
+			<h2>Crop Calc</h2>
+
+			<form>
+
+				<div class="form-group">
+					<label for="crop">Sensor Crop Factor</label>
+					<select class="form-control" id="crop">
+						<option value="0.64">0.64x Medium Format</option>
+						<option value="0.79">0.79x Medium Format Crop</option>
+						<option value="1" selected="">1.0x - Full frame</option>
+						<option value="1.5">1.5x APS-C Nikon</option>
+						<option value="1.6">1.6x APS-C Canon</option>
+						<option value="2">2.0x Micro 4/3</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="sw">Sensor Pixel Width</label>
+					<input type="text" class="form-control" id="sw" value="6720" placeholder="6000">
+				</div>
+
+				<div class="form-group">
+					<label for="sh">Sensor Pixel Height</label>
+					<input type="text" class="form-control" id="sh" value="4480" placeholder="4000">
+				</div>
+
+				<div class="form-group">
+					<label for="fl">Focal Length (mm)</label>
+					<input type="text" class="form-control" id="fl" value="300" placeholder="300">
+				</div>
+
+				<div class="form-group">
+					<label for="fa">Aperture (f)</label>
+					<input type="text" class="form-control" id="fa" value="5.6" placeholder="2.8">
+				</div>
+
+
+
+
+				<div class="form-group">
+					<label for="iw">Croped Image Pixel Width</label>
+					<input type="text" class="form-control" id="iw" value="1200" placeholder="3000">
+				</div>
+
+				<div class="form-group">
+					<label for="ih">Croped Image Pixel Height</label>
+					<input type="text" class="form-control" id="ih" value="800" placeholder="2000">
+				</div>
+
+				<button class="btn btn-lg btn-primary btn-block" type="button" id="calc">Calc</button>
+			</form>
+			<br>
+			<div class="alert alert-success" role="alert" style="display: none;" id="res"></div>
+
+
+		</main><!-- /.container -->
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
